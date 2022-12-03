@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-heroe',
-  templateUrl: './heroe.component.html',
-  styleUrls: ['./heroe.component.css']
+    selector: 'app-heroe',
+    templateUrl: './heroe.component.html',
+    styleUrls: ['./heroe.component.css'],
 })
 export class HeroeComponent implements OnInit {
+    constructor() { }
 
-  constructor() { }
+    nombre: string = 'IronMan';
 
-  ngOnInit(): void {
-  }
 
+    ngOnInit(): void { }
 }
