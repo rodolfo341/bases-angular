@@ -9,7 +9,11 @@ export class HeroeComponent implements OnInit {
     constructor() { }
 
     nombre: string = 'IronMan';
+    edad: number = 50;
 
+    obtenerNombre():string {
+        return `${this.nombre} - ${this.edad}`;
+    }
 
     ngOnInit(): void { }
 }
