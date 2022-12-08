@@ -15,8 +15,12 @@ export class HeroeComponent implements OnInit {
         return `${this.nombre} - ${this.edad}`;
     }
 
-    get mayusculas(){
+    get mayusculas(): string{
         return this.nombre.toUpperCase();
+    }
+
+    cambiarNombre(): void {
+        this.nombre = 'SpiderMan';
     }
 
     ngOnInit(): void { }

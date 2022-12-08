@@ -1,16 +1,28 @@
-<h1>{{nombre}}</h1>
-
-<dl>
-    <td>Nombre: </td>
-    <dd>{{nombre}}</dd>
-
-    <td>Edad: </td>
-    <dd>{{edad}}</dd>
-
-    <td>Funcion</td>
-    <dd>{{obtenerNombre()}}</dd>
-
-    <td>Mayusculas</td>
-    <dd>{{ mayusculas }}</dd>
-
-</dl>
+<div class="container">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6 bg-peru text-white p-4 shadow rounded-4">
+            <h1 class="text-center">{{nombre}}</h1>
+            <hr class="border border-white border-2 opacity-50">
+            <dl>
+                <dd>Nombre: {{nombre}}</dd>
+            
+                <dd>Edad: {{edad}}</dd>
+            
+                <dd>funcion: {{obtenerNombre()}}</dd>
+            
+                <dd>Mayusculas: {{ mayusculas }}</dd>
+            
+            </dl>
+            
+            <button (click)="cambiarNombre()" 
+                    class="btn btn-primary text-white shadow"
+            >
+                Cambiar heroe
+            </button>
+            
+            <button class="btn btn-danger text-white shadow">Cambiar edad</button>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>
