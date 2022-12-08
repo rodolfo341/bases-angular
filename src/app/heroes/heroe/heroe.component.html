@@ -15,13 +15,30 @@
             
             </dl>
             
-            <button (click)="cambiarNombre()" 
+            <button (click)="cambiarASpiderMan()" 
                     class="btn btn-primary text-white shadow"
             >
-                Cambiar heroe
+                Cambiar a SpiderMan
             </button>
-            
-            <button class="btn btn-danger text-white shadow">Cambiar edad</button>
+
+            <button (click)="cambiarAIronMan()" 
+                    class="btn btn-primary text-white shadow"
+            >
+                Cambiar a IronMan
+            </button>
+            <br>
+            <button (click)="aumentarEdad()" 
+                    class="btn btn-danger text-white shadow mt-3"
+            >
+                Aumentar edad
+            </button>
+
+            <button (click)="disminuirEdad()" 
+                    class="btn btn-danger text-white shadow mt-3"
+            >
+                Disminuir edad
+            </button>
+
         </div>
         <div class="col-3"></div>
     </div>

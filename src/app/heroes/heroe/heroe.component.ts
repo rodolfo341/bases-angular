@@ -19,9 +19,23 @@ export class HeroeComponent implements OnInit {
         return this.nombre.toUpperCase();
     }
 
-    cambiarNombre(): void {
+    cambiarASpiderMan(): void {
         this.nombre = 'SpiderMan';
     }
+
+    cambiarAIronMan(): void {
+        this.nombre = 'IronMan';
+    }
+
+    aumentarEdad(): void {
+        this.edad = this.edad + 1;
+    }
+
+    disminuirEdad(): void {
+        this.edad = this.edad - 1;
+    }
+
+    
 
     ngOnInit(): void { }
 }
