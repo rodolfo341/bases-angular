@@ -1,22 +1,23 @@
 * {
     font-family: Helvetica, Arial, sans-serif;
     font-weight: 200;
-  }
-  
-  html, body {
-    
+}
+
+html,
+body {
+
     background: white;
     margin: 20px;
     color: #3e4144;
     -webkit-font-smoothing: antialiased;
-  }
-  
-  
-  dd {
+}
+
+
+dd {
     font-weight: bold;
-  }
-  
-  button {
+}
+
+button {
     background-color: black;
     border-radius: 5px;
     border: 0px;
@@ -25,20 +26,24 @@
     margin-right: 5px;
     margin-left: 5px;
     padding: 5px 10px;
-  }
-  
-  button:hover {
-    background-color: #3e4144;
-  }
-  
-  button:focus{ 
-    outline: none;
-  }
-  
-  .p-1 {
-    padding: 1px;
-  }
+}
 
-  .bg-peru {
+button:hover {
+    background-color: #3e4144;
+}
+
+button:focus {
+    outline: none;
+}
+
+.p-1 {
+    padding: 1px;
+}
+
+.bg-peru {
     background-color: peru;
+}
+
+.bg-peru2 {
+    background-color: rgb(206, 152, 99);
 }
