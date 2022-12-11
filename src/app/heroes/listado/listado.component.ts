@@ -10,10 +10,11 @@ export class ListadoComponent implements OnInit {
 
     ngOnInit(): void { }
 
+    heroeBorrado: string = '';
     heroes: string [] = ['SpiderMan','IronMan','Hulk','Thor'];
 
     borrar(): void{
-        this.heroes.shift();
+        this.heroeBorrado = this.heroes.shift() || '';
     }
 
 }
