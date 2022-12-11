@@ -3,11 +3,19 @@
         <div class="col-3"></div>
         <div class="col-6 text-white p-4 shadow rounded-4 bg-peru2">
             <ul class="list-group">
-                <li *ngFor="let heroe of heroes"
+                <li *ngFor="let heroe of heroes; let i = index"
                     class="list-group-item bg-peru text-white">
-                    {{heroe}}
+                    {{ i + 1}} <span class="px-5"></span> {{heroe}}
                 </li>
-              </ul>
+            </ul>
+            <div class="d-grid gap-2">
+                <button (click)="borrar()"
+                        class="btn btn-secondary mt-3" 
+                        type="button"                
+                >
+                    Borrar
+                </button>  
+            </div>
         </div>
         <div class="col-3"></div>
     </div>
