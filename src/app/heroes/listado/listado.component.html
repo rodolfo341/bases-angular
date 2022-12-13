@@ -8,9 +8,19 @@
                     {{ i + 1}} <span class="px-5"></span> {{heroe}}
                 </li>
             </ul>
-            <div *ngIf="heroeBorrado" class="mt-4 text-center alert alert-secondary">
+
+            <div *ngIf="heroeBorrado; else noBorrado" class="mt-4 text-center alert alert-secondary">
                 <h3>Heroe borrado = <small>{{heroeBorrado}}</small></h3>
             </div>
+
+            <ng-template #noBorrado >
+                <div class="mt-4 text-center alert alert-danger">
+                    <h3>No ha borrado nada!</h3>
+                </div>
+            </ng-template>
+            
+
+
             <div class="d-grid gap-2">
                 <button (click)="borrar()"
                         class="btn btn-secondary mt-3" 
