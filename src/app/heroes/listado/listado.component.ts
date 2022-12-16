@@ -16,5 +16,6 @@ export class ListadoComponent implements OnInit {
     borrar(): void{
         this.heroeBorrado = this.heroes.shift() || '';
     }
+    
 
 }
